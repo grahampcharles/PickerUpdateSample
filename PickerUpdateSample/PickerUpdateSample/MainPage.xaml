@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PickerUpdateSample"
+             x:Class="PickerUpdateSample.MainPage">
+
+    <StackLayout>
+        <Label Text="Items as a Picker:"></Label>
+        <Picker x:Name="thePicker" ItemsSource="{Binding MyItems}" ItemDisplayBinding="{Binding MyItemName}"></Picker>
+        <Button Text="Mutate First Item" Clicked="Button_Clicked"></Button>
+        <Label Text="Items as a ListView:"></Label>
+        <ListView VerticalOptions="Start" HorizontalOptions="StartAndExpand" ItemsSource="{Binding MyItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding MyItemName}" 
+                                        HorizontalOptions="FillAndExpand"                                         
+                                        />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label x:Name="ResultsLabel" IsVisible="False" Text="The ListView has changed, but the Picker has not."></Label>
+    </StackLayout>
+
+</ContentPage>
