@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PickerUpdateSample
 {
-    class ViewModel : BaseViewModel 
+    class ViewModel : BaseViewModel
     {
         public ObservableCollection<MyItem> MyItems { get; set; }
 

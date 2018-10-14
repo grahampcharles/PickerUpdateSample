@@ -22,5 +22,5 @@
         </ListView>
         <Label x:Name="ResultsLabel" IsVisible="False" Text="The ListView has changed, but the Picker has not."></Label>
     </StackLayout>
-
+    
 </ContentPage>

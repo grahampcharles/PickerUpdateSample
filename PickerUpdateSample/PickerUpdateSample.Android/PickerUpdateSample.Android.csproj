@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1DCE0ACE-0A40-454E-BF68-7E7AD4CF194A}</ProjectGuid>
+    <ProjectGuid>{D0F90B95-58CC-48EA-A58E-7A37D3CEF0EF}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PickerUpdateSample\PickerUpdateSample.csproj">
-      <Project>{052AFAB6-9F0F-48CF-9A8D-BDE22445D75E}</Project>
+      <Project>{C655052E-1C49-416D-8119-FEC8097A8975}</Project>
       <Name>PickerUpdateSample</Name>
     </ProjectReference>
   </ItemGroup>
